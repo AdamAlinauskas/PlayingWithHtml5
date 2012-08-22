@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+<style>
+.character{
+	width:150px;
+	height:150px;
+	background-color:red;
+	border-radius:100px;
+	position:absolute;
+	-moz-animation:moveLeft 10s;
+	-moz-animation-iteration-count:infinite;
+}
+
+.tile {
+	width:150px;
+	height:150px;
+	background-color:#777;
+	border-radius:100px;
+	position:absolute;	
+}
+
+.tile1{
+	top:0px;
+	left:0px;
+}
+
+.tile2{
+	top:0px;
+	left:150px;
+}
+
+.tile3{
+	left:150px;
+	top:150px;
+}
+
+.tile4{
+	left:0px;
+	top:150px;
+}
+
+
+
+@-moz-keyframes changeColor{
+	from{background:red}
+	to{background:green}
+}
+
+@-moz-keyframes moveLeft{
+	0% {left:0px; top:0px;}
+	25% {left:150px; top:0px;}
+	50% {left:150;top:150px;}
+	75% {left:0px;top:150px; }
+	100% {top:0px; left:0px;}
+}
+
+</style>
+
+</head>
+
+<body>
+	<div class="tile tile1"></div>
+	<div class="tile tile2"></div>
+	<div class="tile tile3"></div>
+	<div class="tile tile4"></div>
+	
+	<div class="character"></div>
+</body>
+</html>
